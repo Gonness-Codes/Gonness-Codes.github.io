@@ -685,8 +685,8 @@ legend{font-size:14px;font-weight:600;padding:0;margin-bottom:6px}
       <div class="card">
         <div class="cline">
           <span class="tag">Phone / WhatsApp</span>
-          <div class="val"><strong id="phone">+234 906 157 1483</strong><button class="copy" data-copy="+2349061571483" type="button">Copy</button></div>
-          <div class="cbtns"><a href="https://wa.me/2349061571483" target="_blank" rel="noopener">Chat on WhatsApp ↗</a><a href="tel:+2349061571483">Call</a></div>
+          <div class="val"><strong id="phone">+44 7441 428734</strong><button class="copy" data-copy="+447441428734" type="button">Copy</button></div>
+          <div class="cbtns"><a href="https://wa.me/447441428734" target="_blank" rel="noopener">Chat on WhatsApp ↗</a><a href="tel:+447441428734">Call</a></div>
         </div>
         <div class="cline">
           <span class="tag">Email</span>
@@ -836,7 +836,7 @@ legend{font-size:14px;font-weight:600;padding:0;margin-bottom:6px}
     const name = f.get("name").trim(), msg = f.get("message").trim();
     if(!name || !msg){ toast("Please add your name and project details"); return; }
     const text = `Hi Taiwo, I'm ${name}${f.get("email") ? " ("+f.get("email")+")" : ""}.\nService: ${f.get("service")}\nBudget: ${f.get("budget")}\n\n${msg}`;
-    document.getElementById("waLink").href = "https://wa.me/2349061571483?text=" + encodeURIComponent(text);
+    document.getElementById("waLink").href = "https://wa.me/447441428734?text=" + encodeURIComponent(text);
     document.getElementById("mailLink").href = "mailto:taiwoabdulganiy48@gmail.com?subject=" + encodeURIComponent("Project inquiry: "+f.get("service")) + "&body=" + encodeURIComponent(text);
     document.getElementById("fout").classList.add("show");
   });
@@ -897,7 +897,7 @@ legend{font-size:14px;font-weight:600;padding:0;margin-bottom:6px}
     if(!f.get("consent")){ err.textContent = "Please tick the box to agree your review can be shown."; return; }
     err.textContent = "";
     const msg = `Hi Taiwo, here is my review for your website.\n\nRating: ${rating}/5\nName: ${name}\nBusiness: ${(f.get("business")||"").trim() || "-"}\nProject: ${f.get("project")}\nReview: ${text}\nPermission to publish: Yes`;
-    $("r-wa").href = "https://wa.me/2349061571483?text=" + encodeURIComponent(msg);
+    $("r-wa").href = "https://wa.me/447441428734?text=" + encodeURIComponent(msg);
     $("r-mail").href = "mailto:taiwoabdulganiy48@gmail.com?subject=" + encodeURIComponent("My review for Taiwo Abdulganiy") + "&body=" + encodeURIComponent(msg);
     $("r-out").classList.add("show");
   });
